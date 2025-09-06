@@ -72,7 +72,8 @@ dependencies {
     implementation(libs.retrofit.moshi) // or gson
     implementation(libs.okhttp)
     implementation(libs.okhttp.logging)
-
+    implementation(libs.moshi)
+    implementation(libs.moshi.kotlin)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

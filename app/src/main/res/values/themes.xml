@@ -2,4 +2,20 @@
 <resources>
 
     <style name="Theme.KotlinFlowDemoMaster" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <!-- Splash theme -->
+    <style name="Theme.KotlinFlowDemo.Splash" parent="Theme.SplashScreen">
+        <!-- Background color -->
+<!--        <item name="windowSplashScreenBackground">@drawable/splash_background</item>-->
+
+        <item name="windowSplashScreenBackground">@color/purple_700</item>
+        <!-- Icon in center -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_placeholder</item>
+        <!-- Icon size -->
+        <item name="windowSplashScreenIconBackgroundColor">@color/white</item>
+        <!-- Optional: post-animation theme -->
+        <item name="postSplashScreenTheme">@style/Theme.KotlinFlowDemoMaster</item>
+    </style>
+
+
 </resources>

@@ -13,7 +13,6 @@ import javax.inject.Inject
 class UserRepository @Inject constructor(
     private val api: UserApi,
     private val dao: UserDao,
-    @ApplicationContext private val context: Context
 ) {
     fun getUsers(): Flow<UiState<List<User>>> = flow {
         emit(UiState.Loading)

@@ -68,7 +68,6 @@ object AppModule {
     @Provides @Singleton
     fun provideRepository(
         api: UserApi,
-        dao: UserDao,
-        @ApplicationContext context: Context): UserRepository =
-        UserRepository(api, dao,context)
+        dao: UserDao): UserRepository =
+        UserRepository(api, dao)
 }

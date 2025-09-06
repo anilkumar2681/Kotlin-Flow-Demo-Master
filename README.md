@@ -27,7 +27,7 @@ The app will fetch users from `https://json-placeholder.mock.beeceptor.com/users
 UI (Jetpack Compose) <-> ViewModel <-> Repository <-> (Room DB + Retrofit API)
 ```
 
-![Architecture Diagram](docs/architecture.png)
+![Architecture Diagram](images/architecture.png)
 
 ## 📸 Screenshots
 | Loading State | Success State | Error State |

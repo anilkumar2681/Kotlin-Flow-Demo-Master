@@ -3,6 +3,7 @@ package com.team42.kotlin_flow_demo_master.di
 import android.content.Context
 import androidx.room.Room
 import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import com.team42.kotlin_flow_demo_master.data.local.AppDatabase
 import com.team42.kotlin_flow_demo_master.data.local.UserDao
 import com.team42.kotlin_flow_demo_master.data.remote.UserApi
@@ -23,6 +24,9 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object AppModule {
 
+    val moshi = Moshi.Builder()
+        .add(KotlinJsonAdapterFactory())
+        .build()
 
     @Provides @Singleton
     fun provideDatabase(@ApplicationContext context: Context): AppDatabase =
@@ -49,11 +53,11 @@ object AppModule {
             .build()
     @Provides
     @Singleton
-    fun provideRetrofit(okHttpClient: OkHttpClient, moshi: Moshi): Retrofit =
+    fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit =
         Retrofit.Builder()
             .baseUrl("https://json-placeholder.mock.beeceptor.com")
             .client(okHttpClient)
-            .addConverterFactory(MoshiConverterFactory.create(Moshi.Builder().build()))
+            .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()
 
     @Provides
@@ -64,7 +68,6 @@ object AppModule {
     @Provides @Singleton
     fun provideRepository(
         api: UserApi,
-        dao: UserDao,
-        @ApplicationContext context: Context): UserRepository =
-        UserRepository(api, dao,context)
+        dao: UserDao): UserRepository =
+        UserRepository(api, dao)
 }

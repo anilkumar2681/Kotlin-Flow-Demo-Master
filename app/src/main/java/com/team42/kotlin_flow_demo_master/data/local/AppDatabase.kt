@@ -11,7 +11,7 @@ import com.team42.kotlin_flow_demo_master.model.User
  * Copyright © 2025 Team42. All rights reserved.
  **/
 
-@Database(entities = [User::class], version = 1)
+@Database(entities = [User::class], version = 1,exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun userDao(): UserDao
 }

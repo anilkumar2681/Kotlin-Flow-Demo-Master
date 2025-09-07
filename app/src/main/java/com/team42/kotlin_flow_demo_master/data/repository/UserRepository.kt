@@ -1,11 +1,9 @@
 package com.team42.kotlin_flow_demo_master.data.repository
 
-import android.content.Context
 import com.team42.kotlin_flow_demo_master.data.local.UserDao
 import com.team42.kotlin_flow_demo_master.data.remote.UserApi
 import com.team42.kotlin_flow_demo_master.model.User
 import com.team42.kotlin_flow_demo_master.util.UiState
-import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
@@ -13,7 +11,6 @@ import javax.inject.Inject
 class UserRepository @Inject constructor(
     private val api: UserApi,
     private val dao: UserDao,
-    @ApplicationContext private val context: Context
 ) {
     fun getUsers(): Flow<UiState<List<User>>> = flow {
         emit(UiState.Loading)

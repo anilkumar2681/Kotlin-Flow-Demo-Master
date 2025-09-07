@@ -1,4 +1,4 @@
-# FlowDemo
+# Kotlin-Flow-Demo-Master
 
 ## 📌 Overview
 This is a demo Android project showing **best practices for data loading** using:
@@ -13,21 +13,21 @@ This is a demo Android project showing **best practices for data loading** using
 ## 🚀 Usage
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/FlowDemo.git
+   git clone https://github.com/anilkumar2681/Kotlin-Flow-Demo-Master.git
    ```
 
 2. Open in **Android Studio** (Arctic Fox or newer).
 
 3. Run on emulator/device.
 
-The app will fetch users from `https://jsonplaceholder.typicode.com/users`, cache them into Room DB, and display them with Jetpack Compose.
+The app will fetch users from `https://json-placeholder.mock.beeceptor.com/users`, cache them into Room DB, and display them with Jetpack Compose.
 
 ## 🏗️ Architecture
 ```
 UI (Jetpack Compose) <-> ViewModel <-> Repository <-> (Room DB + Retrofit API)
 ```
 
-![Architecture Diagram](docs/architecture.png)
+![Architecture Diagram](images/architecture.png)
 
 ## 📸 Screenshots
 | Loading State | Success State | Error State |

@@ -1,4 +1,5 @@
 # Kotlin-Flow-Demo-Master
+![CoverImage](images/cover_image.png)
 
 ## 📌 Overview
 This is a demo Android project showing **best practices for data loading** using:

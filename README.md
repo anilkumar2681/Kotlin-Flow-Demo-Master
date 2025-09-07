@@ -41,5 +41,5 @@ UI (Jetpack Compose) <-> ViewModel <-> Repository <-> (Room DB + Retrofit API)
 - Repository pattern for clean separation
 - Offline-first approach (cache → network)
 
----
+--- 
 Made with ❤️ using Kotlin + Jetpack Compose

@@ -75,9 +75,9 @@ fun UserScreen(viewModel: UserViewModel = hiltViewModel()) {
                 }
 
                 is UiState.Error -> {
-                    Text(
-                        "Error: ${(state as UiState.Error).message}",
-                        modifier = Modifier.padding(16.dp)
+                    ErrorScreen(
+                        message = (state as UiState.Error).message,
+                        onRetry = { viewModel.loadUsers() }
                     )
                 }
             }

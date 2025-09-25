@@ -43,3 +43,7 @@ UI (Jetpack Compose) <-> ViewModel <-> Repository <-> (Room DB + Retrofit API)
 
 --- 
 Made with ❤️ using Kotlin + Jetpack Compose
+
+## WhatsApp Channel
+Get Kotlin & Android Jetpack Compose tips on `What's App` **Join My Channel** :
+[📚 Kotlin & Android Learning📚](https://whatsapp.com/channel/0029VbBGTNr90x2umLoWKU3z)

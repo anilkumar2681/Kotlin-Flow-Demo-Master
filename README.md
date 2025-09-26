@@ -1,4 +1,13 @@
 # Kotlin-Flow-Demo-Master
+
+[![ViewModel](https://img.shields.io/badge/ViewModel-Android%20Jetpack-brightgreen)](https://developer.android.com/topic/libraries/architecture/viewmodel)
+[![Kotlin Flow](https://img.shields.io/badge/Kotlin%20Flow-Coroutines-blue)](https://kotlinlang.org/docs/flow.html)
+[![Repository Pattern](https://img.shields.io/badge/Pattern-Repository-orange)](https://developer.android.com/jetpack/guide)
+[![Hilt Dependency Injection](https://img.shields.io/badge/Hilt-DI-purple)](https://dagger.dev/hilt/)
+[![Room Database](https://img.shields.io/badge/Room-Database-yellow)](https://developer.android.com/training/data-storage/room)
+[![Retrofit](https://img.shields.io/badge/Retrofit-REST%20API-red)](https://square.github.io/retrofit/)
+[![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-UI-blueviolet)](https://developer.android.com/jetpack/compose)
+
 ![CoverImage](images/cover_image.png)
 
 ## 📌 Overview

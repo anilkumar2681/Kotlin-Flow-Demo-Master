@@ -1,1 +1,17 @@
-/build
+# Build output
+build/
+
+# Generated files
+generated/
+
+# Navigation / DataBinding generated code
+*.nav
+*.xml.bin
+
+# Sensitive keys
+src/main/res/values/secrets.xml
+src/main/res/values/api_keys.xml
+
+# Local db / cache
+*.db
+*.iml

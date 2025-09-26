@@ -1,26 +1,27 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Gradle
+.gradle/
+.kotlin/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Local configuration
 local.properties
-/.idea/.name
-/.idea/AndroidProjectSystem.xml
-/.idea/runConfigurations.xml
-/.idea/inspectionProfiles/Project_Default.xml
-/.idea/misc.xml
-/.idea/migrations.xml
-/.idea/gradle.xml
-/.idea/deviceManager.xml
-/.idea/deploymentTargetSelector.xml
-/.idea/compiler.xml
-/.kotlin/errors/errors-1757250233099.log
+.idea/
+
+# OS files
+Thumbs.db
+
+# Keystore files (important for signing)
+*.jks
+*.keystore
+
+# Android Studio
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Logs
+*.log
+
+# Jetpack Compose Preview cache
+*.preview
